@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>page1</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&family=Lora&family=Montserrat&family=Open+Sans:ital@1&family=Oswald&family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+
+   
+  }
+  .carousel-control-prev-icon:hover,.carousel-control-next-icon:hover{
+background-color:gray;
+  }
+
+  
+  /* footer social media */
+  .wrapper {
+    display: inline-flex;
+    justify-content: space-evenly; 
+    margin-top:30px;
+    
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 15px;
+    width: 10px;
+    height: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+   
+   
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background-color: #3b5999;
+    color: #ffffff;
+  }
+  
+  .wrapper .twitter,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background-color: #46c1f6;
+    color: #ffffff;
+  }
+  
+  .wrapper .instagram,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+  }
+  
+  .wrapper .github,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .wrapper .youtube,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip::before {
+    background-color: #de463b;
+    color: #ffffff;
+  }
+  </style>
+</head>
+<body>
+<!-- carousel slide bootstrap-->
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner bg-dark" >
+    <div class="carousel-item active">
+      <img src="silder/bannner-right-img.jpg" alt="Los Angeles" width="600" height="500">
+      <div class="carousel-caption">
+        <h3 style='color:rgb(252, 204, 0);font-weight: bolder;font-size: 30px;'>Free Service Calls. </h3>
+        <p style='color:rgb(60, 143, 196);font-weight: bolder;font-size: 40px;'>Our service is a breath of fresh air.</p>
+   
+      </div>   
+    </div>
+    <div class="carousel-item" >
+      <img src='silder/depositphotos_10570156-stock-photo-master-air-conditioner.jpg' alt="Chicago" width="600" height="500">
+      <div class="carousel-caption">
+        <h3 style='color:rgb(252, 204, 0);font-weight: bolder;font-size: 30px;'>24-hour emergncy service </h3>
+        <p style='color:rgb(27, 99, 145);font-weight: bolder;font-size: 40px;'>We put the soul in climate control</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="silder/about1.jpg" alt="New York" width="600" height="500">
+      <div class="carousel-caption">
+        <h3 style='color:rgb(252, 204, 0);font-weight: bolder;font-size: 30px;'> Keeping you cool</h3>
+        <p style='color:rgb(33, 113, 163);font-weight: bolder;font-size: 40px;'>Quality service at affordable prices</p>
+
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next " href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<!-- services of AC -->
+<div class="container-fluid text-center p-5 mt-5" style='background-color: #f2f5f7'>
+<h5 class='text-info pb-3'> OUR SERVICES</h5>
+<h1 class=' pb-3'>What We Can Offer You</h1>
+<h5 class="text-muted mb-5"><small>We Provide Fast, Reliable Heating and Air Conditioning Services in Newyork City and It’s Sourrounding Areas.</small></h5>
+
+
+
+ <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-around  ">
+  <div class="col ">
+    <div class="card h-100  shadow-lg p-3 mb-2 bg-body rounded-3">
+      <img src="service/ac-installation-500x500 (1).jpg" class="card-img-top img-fluid" alt="..." style='height:200px;'>
+      <div class="card-body">
+        <h5 class="card-title">Installation Service</h5>
+       
+      </div>
+      
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 shadow-lg p-3 mb-2 bg-body rounded-3">
+      <img src="service/ac-repair.jpg" class="card-img-top img-fluid" alt="..." style='height:200px;'>
+      <div class="card-body">
+        <h5 class="card-title">Repair Service</h5>
+
+      </div>
+     
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 shadow-lg p-3 mb-2 bg-body rounded-3 ">
+      <img src="service/AC_Maintenance_web.jpg" class="card-img-top img-fluid" alt="..." style='height:200px;'>
+      <div class="card-body">
+        <h5 class="card-title">Manintenance Service<h5>
+       
+      </div>
+     
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 shadow-lg p-3 mb-2 bg-body rounded-3">
+      <img src="service/shutterstock_402961492.jpg" class="card-img-top img-fluid" alt="..." style='height:200px;'>
+      <div class="card-body">
+        <h5 class="card-title">Cleaning Service<h5>
+       
+      </div>
+     
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- gallary -->
+<div class="container-fluid text-left p-5 mt-5" >
+  <h5 class=' pb-3 text-info'>WORK GALLERY</h5>
+    
+    <div class="row ">
+      <div class="col-sm-6 mb-4">
+       <h1>Our Featured Works</h1> 
+      </div>
+      <div class="col-sm-5 text-muted "><h5><small> Have Done More Than 800 Projects In Last 3 Years, With 100% Satisfaction.</small></h5>
+      </div>
+    </div>
+    
+
+    
+   
+    <div class="container-fluid  m-4 ">
+      <div class="row ">
+        <div class="col-sm-4 mb-3">
+       <img src='gallary/04b8f41bf7b4568c972a1329741fc24a.jpg' alt='' class='img-fluid  rounded-3 ' style="width:400px; height:220px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='gallary/ac-wont-turn-on-after-hurricane.jpg' alt='' class='img-fluid  rounded-3 ' style="width:400px; height:220px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='gallary/air-conditioning-repair-lp.jpg' alt='' class='img-fluid  rounded-3 ' style="width:400px; height:220px;">
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-sm-4 mb-3">
+       <img src='gallary/AdobeStock_162711713-1024x683.jpeg' alt='' class='img-fluid  rounded-3 ' style="width:400px; height:220px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='gallary/air-conditioner-services-500x500.jpg' alt='' class='img-fluid  rounded-3 ' style="width:400px; height:220px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='gallary/images (3).jpg' alt='' class='img-fluid  rounded-3 ' style="width:400px; height:220px;">
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-sm-4 mb-3">
+       <img src='gallary/AC-repair.jpeg ' alt='' class='img-fluid  rounded-3 ' style="width:400px; height:220px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='gallary/f8172a5c49a1.jpg' alt='' class='img-fluid rounded-3 ' style="width:400px; height:220px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='gallary/images (8).jpg' alt='' class='img-fluid  rounded-3' style="width:400px; height:220px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-info mb-5 pb-3">
+    <!-- Control the column width, and how they should appear on different devices -->
+    
+    
+    <div class="row">
+      <div class="col-sm-4 text-center" style="color:rgb(252, 204, 0);"><h1 style='font-weight: bolder;' class='display-1'>2090</h1  ><br><hr   style='display: block;
+         padding-bottom: 1px;
+         padding-top:1px;
+        margin-left: 145px;
+        margin-right: 145px;
+        border-style: inset;
+        border-width: 1px;'>
+        <h2 style='color:white;'>CUSTOMERS</h2><br>
+       <h5   class='text-muted'>100% Satisfied With Our Work</h5> </div>
+      <div class="col-sm-4 text-center" style="color:rgb(252, 204, 0);"><h1 style='font-weight: bolder;' class='display-1'>124</h1>   <br><hr   style='display: block;
+       padding-bottom: 1px;
+        padding-top:1px;
+        margin-left: 145px;
+        margin-right: 145px;
+        border-style: inset;
+        border-width: 1px;'>
+        <h2 style='color:white;'>PROFESSIONAL</h2><br>
+        <h5 class='text-muted' >Engineers Working In Our Company</h5></div>
+      <div class="col-sm-4 text-center" style="color:rgb(252, 204, 0);"> <h1 style='font-weight: bolder;' class='display-1'>6</h1><br><hr style='display: block;
+        
+        padding-bottom: 1px;
+        padding-top:1px;
+        margin-left: 145px;
+        margin-right: 145px;
+        border-style: inset;
+        border-width: 1px;'>
+       <h2  style='color:white;'>BRANCHES</h2> <br>
+       <h5  class='text-muted'>Operating In NY & It’s Sorrounding</h5> </div>
+    </div>
+    </div>
+    
+
+
+    <footer>
+   
+      <p style='color:black;margin-top: 5px;padding-bottom: 16px;background-color: gray;font-size: larger;' class='text-center mb-0 pt-5'> © 2010-2021 Super® Global Inc.</p> 
+    </footer>
+
+  
+  
+
+
+
+
+
+
+
+
+
+ 
+
+</body>
+</html>

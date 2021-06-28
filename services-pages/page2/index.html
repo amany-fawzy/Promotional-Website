@@ -1,0 +1,335 @@
+
+    <!DOCTYPE html>
+    <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>page2</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <!-- Embedding Fonts from google fonts -->
+     <script src="https://kit.fontawesome.com/10c6dfcd16.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.gstatic.com" />
+     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&family=Lora&family=Montserrat&family=Open+Sans:ital@1&family=Oswald&family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+       <script src='https://code.iconify.design/1/1.0.7/iconify.min.js'></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+       
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    img {
+      vertical-align: middle;
+    }
+    
+    /* Position the image container (needed to position the left and right arrows) */
+    .containers {
+      position: relative;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+    
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+      font-weight: bolder;
+     font-size:30px;
+    }
+    
+    .rows:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Six columns side by side */
+    .columns {
+      float: left;
+      width: 24.66%;
+    }
+    
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+    
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+    /* our services */
+    
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.contain:hover .overlay {
+  opacity: 1;
+}
+
+.texts {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+    </style>
+    <body>
+    
+    
+    
+    <div class="containers mt-5">
+      <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <img src="picture/home-appliances-1589822178077.png" style="width:100%;height:530px;">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <img src="picture/istockphoto-1094164128-612x612.jpg" style="width:100%;height:530px;">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <img src="picture/oven-repair.jpg" style="width:100%; height:530px;">
+      </div>
+    
+     
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="rows ">
+        <div class="columns">
+          <img class="demo cursor" src="picture/home-appliances-1589822178077.png" style="width:100%;height:150px;" onclick="currentSlide(1)" alt="Appliances Repair Services For All Most Major Brands">
+        </div>
+        <div class="columns">
+          <img class="demo cursor" src="picture/istockphoto-1094164128-612x612.jpg" style="width:100%;height:150px;" onclick="currentSlide(2)" alt="Faulty Appliances? Repair, Rather Than Replace">
+        </div>
+        <div class="columns">
+          <img class="demo cursor" src="picture/oven-repair.jpg" style="width:100%;height:150px;" onclick="currentSlide(3)" alt="100% Percent Customers Satisfaction">
+        </div>
+       
+     
+      </div>
+    </div>
+
+<!-- our services-->
+    <div class="container-fluid text-center p-5 mt-5 mb-5" style='background-color: #f2f5f7'>
+      <h5 class='text-info pb-3'> OUR SERVICES</h5>
+      <h1 class=' pb-3'>What We Can Offer You</h1>
+      <h5 class="text-muted mb-5"><small>We Provide Aprofessionals For Home Appliances Services in Newyork City and It’s Sourrounding Areas.</small></h5>
+      
+      
+      
+       <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-around  ">
+        <div class="col ">
+          <div class=" p-3 mb-2  rounded-3 contain">
+            <img src="picture/serv/240_F_146340851_uqdccO447T5bWlWDsSkI88kEqbZfuAye.jpg" class="card-img-top img-fluid" alt="..." style='height:210px;'>
+           
+            <div class="overlay">
+              <div class="texts">Microwave Oven Repair</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class=" p-3 mb-2  rounded-3 contain">
+            <img src="picture/serv/240_F_96317500_h9HOku0DjTb03o46G2EuAISaG2yTtEhQ.jpg" class="card-img-top img-fluid" alt="..." style='height:210px;'>
+           
+            <div class="overlay">
+              <div class="texts">Cooker Repair</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="  p-3 mb-2  rounded-3 contain">
+            <img src="picture/serv/Washing-machine.jpg" class="card-img-top img-fluid" alt="..." style='height:210px;'>
+            
+            <div class="overlay">
+              <div class="texts">Washing Machine Repair</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class=" p-3 mb-2  rounded-3 contain">
+            <img src="picture/serv/unnamed (2).jpg" class="card-img-top img-fluid" alt="..." style='height:210px;'>
+            <div class="overlay">
+              <div class="texts">Refrigerator Repair</div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      </div>
+
+  <!-- gallary -->
+<div class="container-fluid text-left p-5 mt-5" >
+  <h5 class=' pb-3 text-info'>WORK GALLERY</h5>
+    
+    <div class="row ">
+      <div class="col-sm-6 mb-4">
+       <h1>Our Featured Works</h1> 
+      </div>
+      <div class="col-sm-5 text-muted "><h5><small> Have Done More Than 500 Projects In Last 3 Years, With 100% Satisfaction.</small></h5>
+      </div>
+    </div>
+    
+
+    
+   
+    <div class="container-fluid  m-4 ">
+      <div class="row ">
+        <div class="col-sm-4 mb-3">
+       <img src='picture/gallary/istockphoto-1129117250-612x612.jpg' alt='' class='img-fluid  rounded-3 ' style="width:350px; height:210px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='picture/gallary/240_F_218554934_Yzr2tzzq7NuNQvYuCMFfctUlT4Iwn6HB.jpg' alt='' class='img-fluid  rounded-3 ' style="width:350px; height:210px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='picture/gallary/240_F_224078705_2eHuO8WleoCbbp1Y0lYD4ul6qaAUkslc.jpg' alt='' class='img-fluid  rounded-3 ' style="width:350px; height:210px;">
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-sm-4 mb-3">
+       <img src='picture/gallary/Appliance-Repair-Boca-Raton-Florida-1-1024x682.jpg' alt='' class='img-fluid  rounded-3 ' style="width:350px; height:210px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='picture/gallary/istockphoto-1170038003-612x612.jpg' alt='' class='img-fluid  rounded-3 ' style="width:350px; height:210px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='picture/gallary/home-appliance-repair.webp' alt='' class='img-fluid  rounded-3 ' style="width:350px; height:210px;">
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-sm-4 mb-3">
+       <img src='picture/gallary/istockphoto-171579433-612x612.jpg' alt='' class='img-fluid  rounded-3 ' style="width:350px; height:210px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='picture/gallary/istockphoto-1055429556-612x612.jpg' alt='' class='img-fluid rounded-3 ' style="width:350px; height:210px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='picture/gallary/istockphoto-1206509738-612x612.jpg  ' alt='' class='img-fluid  rounded-3' style="width:350px; height:210px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+   
+    <p style='color:black;margin-top: 5px;padding-bottom: 16px;background-color: gray;font-size: larger;' class='text-center mb-0 pt-5'> © 2010-2021 Super® Global Inc.</p> 
+  </footer>
+
+   
+
+
+    
+    
+    <script>
+      // slides
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+        
+   
+</body>
+  </html>

@@ -1,0 +1,397 @@
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>page3</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <!-- Embedding Fonts from google fonts -->
+     <script src="https://kit.fontawesome.com/10c6dfcd16.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.gstatic.com" />
+     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&family=Lora&family=Montserrat&family=Open+Sans:ital@1&family=Oswald&family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+       <script src='https://code.iconify.design/1/1.0.7/iconify.min.js'></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+       
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+ 
+
+ 
+    
+    
+  
+
+   
+
+
+    
+    
+    
+        
+   
+
+
+  <style>
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .containers {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .rows:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .columns {
+    float: left;
+    width: 10.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  /* our services*/
+   .contain {
+  position: relative;
+ 
+}
+
+
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.contain:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.texts {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+  </style>
+  </head>
+  <body>
+  
+ <!-- Slideshow Gallery  --> 
+  
+  <div class="containers">
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="img/images (15).jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="img/istockphoto-1155870630-612x612.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="img/istockphoto-637945400-612x612.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="img/istockphoto-695858734-612x612.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="img/h/istockphoto-1145914991-612x612.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="img/h/istockphoto-1167945070-612x612.jpg" style="width:100%">
+    </div>
+  
+  
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <div class="rows">
+      <div class="columns">
+        <img class="demo cursor" src="img/images (15).jpg" style="width:100px;height:100px;" onclick="currentSlide(1)" alt="">
+      </div>
+      <div class="columns">
+        <img class="demo cursor" src="img/istockphoto-1155870630-612x612.jpg" style="width:100px;height:100px;" onclick="currentSlide(2)" alt="">
+      </div>
+      <div class="columns">
+        <img class="demo cursor" src="img/istockphoto-637945400-612x612.jpg" style="width:100px;height:100px;" onclick="currentSlide(3)" alt="">
+      </div>
+      <div class="columns">
+        <img class="demo cursor" src="img/istockphoto-695858734-612x612.jpg" style="width:100px;height:100px;" onclick="currentSlide(4)" alt="">
+      </div>
+      <div class="columns">
+        <img class="demo cursor" src="img/h/istockphoto-1145914991-612x612.jpg" style="width:100px;height:100px;" onclick="currentSlide(5)" alt="">
+      </div>    
+      <div class="columns">
+        <img class="demo cursor" src="img/h/istockphoto-1167945070-612x612.jpg" style="width:100px;height:100px;" onclick="currentSlide(6)" alt="">
+      </div>
+     
+    </div>
+  </div>
+  
+
+<!-- our services-->
+  <div class="container-fluid text-center p-5 mt-5 mb-5 " style='background-color: #f2f5f7'>
+    <h5 class='text-info pb-3'> OUR SERVICES</h5>
+    <h1 class=' pb-3'>What We Can Offer You</h1>
+    <h5 class="text-muted mb-5"><small>We Provide Aprofessionals For Technical support may be delivered by different technologies 
+      depending on the situation. For example, direct questions can be
+       addressed using telephone calls, SMS, Online chat, Support Forums,
+        E-mail or Fax in Newyork City and It’s Sourrounding Areas.</small></h5>
+    
+    
+    
+     <div class="row row-cols-1 row-cols-md-4 g-5 justify-content-around  ">
+      <div class="col-sm-2 ">
+        <div class=" p-1 mb-1  rounded-3 contain">
+          <img src="icon/istockphoto-1180028723-612x612.jpg" class="card-img-top img-fluid" alt="telephone-calls" style='height:200px;width:200px;'>
+         
+          <div class="overlay">
+            <div class="texts">Telephone Calls</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class=" p-1 mb-1  rounded-3 contain">
+          <img src="icon/istockphoto-1202064594-612x612.jpg" class="card-img-top img-fluid" alt="online-chat" style='height:200px;width:200px;'>
+         
+          <div class="overlay">
+            <div class="texts">Online Chat</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="  p-1 mb-1  rounded-3 contain">
+          <img src="icon/istockphoto-1262983189-612x612.jpg" class="card-img-top img-fluid" alt="sms" style='height:200px;width:200px;'>
+          
+          <div class="overlay">
+            <div class="texts">Sms</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-2">
+        <div class="  p-1 mb-1  rounded-3 contain">
+          <img src="icon/istockphoto-521083122-612x612.jpg" class="card-img-top img-fluid" alt="fax" style='height:200px;width:200px;'>
+          
+          <div class="overlay">
+            <div class="texts">Fax</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class=" p-1 mb-1  rounded-3 contain">
+          <img src="icon/istockphoto-500319623-612x612.jpg" class="card-img-top img-fluid" alt="email" style='height:200px;width:200px;'>
+          <div class="overlay">
+            <div class="texts">Email</div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+    </div>
+      <!-- gallary -->
+<div class="container-fluid text-left p-5 mt-5"  >
+  <h5 class=' pb-3 text-info'>WORK GALLERY</h5>
+    
+    <div class="row ">
+      <div class="col-sm-6 mb-4">
+       <h1>Our Featured Works</h1> 
+      
+    </div>
+    
+
+    
+   
+    <div class="container-fluid  m-4 ">
+      <div class="row ">
+        <div class="col-sm-4 mb-3">
+       <img src='ga/istockphoto-1132874986-612x612.jpg' alt='' class='img-fluid  rounded-3 ' style="width:350px; height:210px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='ga/istockphoto-1177384544-612x612.jpg' alt='' class='img-fluid  rounded-3 ' style="width:350px; height:210px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='ga/istockphoto-1179567323-612x612 (1).jpg' alt='' class='img-fluid  rounded-3 ' style="width:350px; height:210px;">
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-sm-4 mb-3">
+       <img src='ga/istockphoto-1183979660-612x612.jpg' alt='' class='img-fluid  rounded-3 ' style="width:350px; height:210px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='ga/istockphoto-1215890726-612x612.jpg' alt='' class='img-fluid  rounded-3 ' style="width:350px; height:210px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='ga/istockphoto-968899300-612x612.jpg' alt='' class='img-fluid  rounded-3 ' style="width:350px; height:210px;">
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-sm-4 mb-3">
+       <img src='ga/istockphoto-512220566-612x612.jpg' alt='' class='img-fluid  rounded-3 ' style="width:350px; height:210px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='ga/istockphoto-936237054-612x612.jpg' alt='' class='img-fluid rounded-3 ' style="width:350px; height:210px;">
+        </div>
+        <div class="col-sm-4 mb-3">
+          <img src='ga/photo-1551434678-e076c223a692.jpg' alt='' class='img-fluid  rounded-3' style="width:350px; height:210px;">
+        </div>
+       
+       
+      </div>
+    </div>
+  </div>
+
+   <!-- footer -->
+ <footer>
+  <div class='container mt-5'>
+   <p style='color:black;margin-top: 5px;padding-bottom: 16px;font-size: larger;' class=' container text-center mb-0 pt-5'> © 2010-2021 Super® Global Inc.</p> 
+  </div> 
+  </footer>
+  
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+      
+  
+
+
+   
+
+
+</body>
+
+
+</html>
